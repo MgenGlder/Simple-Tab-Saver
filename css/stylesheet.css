@@ -1,0 +1,96 @@
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  width: 980px;
+}
+h2 {
+
+  font-size: 2.4em;
+  line-height: 2.4em;
+  letter-spacing: -0.06em;
+  border-bottom: 10px solid #000;
+  border-bottom-left-radius: 15px;
+}
+.col3 {
+  width: 320px;
+  height: 700px;
+  margin: 0 0 0 0;
+  float: left;
+  overflow: hidden;
+  border-right: 10px solid #bbb;
+}
+.col3:nth-child(2), .col3:nth-child(3) {
+  overflow-y: scroll;
+}
+.col3:last-child {
+  border-right: none;
+}
+p {
+  margin: 0 0;
+  padding: 0 0;
+  text-decoration: overline;
+}
+input[type=submit], input[type=text]{
+  border : solid 2px #bbb;
+	border-radius : 8px;
+	moz-border-radius : 8px;
+	font-size : 20px;
+	color : #000000;
+	padding : 1px 10px;
+	background-color : #bababa;
+  margin: auto auto;
+  display: block;
+}
+input[type=submit] {
+  margin-top: 10px;
+
+}
+.colNames {
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 2em;
+  text-align: center;
+  line-height: 2.3em;
+}
+
+table {
+  margin: 0 auto;
+}
+tr {
+  margin-bottom: 10px;
+  margin: 2px;
+}
+th, td {
+  border-radius: 3px;
+  display: inline-block;
+  width: 90px;
+  color: #333;
+  margin: 2px;
+  padding: 7px 10px 5px 10px;
+/*  min-width: 9em; */
+  text-align: left;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+th {
+  background-color: #d7d7d7;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+td {
+  background-color: #fff;
+}
+table.sortable th:hover {
+  cursor: pointer;
+}
+
+th.ascending, th.descending, table.sortable th:hover {
+  background-color: #00cccc;
+  color: #fff;
+}
+
+th.ascending:after {
+  font-size: 60%;
+  content: "\25BC";
+  float: left;
+  padding: 4px 5px 0 0;
+}
